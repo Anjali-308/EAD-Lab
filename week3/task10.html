@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header, footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.section {
+    flex: 1;
+    margin: 10px;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .content {
+        flex-direction: row;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>CBIT  College</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="section">Welcome to our college</div>
+    <div class="section">Latest Updates</div>
+</div>
+
+<footer>
+    © 2026 CBIT College
+</footer>
+
+</body>
+</html>
