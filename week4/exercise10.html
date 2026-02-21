@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation bar</title>
+        <style>
+            .nav{
+                background-color: rgb(227, 232, 218);
+                display: flex;
+            }
+            .nav a{
+  color:white;
+  padding:14px 20px;
+  text-decoration:none;
+  display:block;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:#f4ebeb;
+  min-width:150px;
+}
+.dropdown-content a{
+    display: block;
+
+
+}
+.dropdown{
+    position: relative;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+        </style>
+    </head>
+    <body>
+        
+        <div>
+            <a href="#">Home</a>
+            <div class="dropdown">
+            <a href="#">Courses</a>
+        <div class="dropdown-content">
+            <a href="#">it</a>
+            <a href="#">cse</a>
+        </div>
+        </div>
+            <a href="#">Contact</a>
+        </div>
+    </body>
+</html>

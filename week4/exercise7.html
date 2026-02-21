@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.board{
+  display:grid;
+  grid-template-columns:repeat(8,60px);
+  grid-template-rows:repeat(8,60px);
+}
+
+.square{
+  width:60px;
+  height:60px;
+}
+
+/* Black squares */
+.square:nth-child(even){
+  background:rgb(126, 24, 24);
+}
+
+/* Fix alternating rows */
+.board div:nth-child(16n+1),
+.board div:nth-child(16n+3),
+.board div:nth-child(16n+5),
+.board div:nth-child(16n+7),
+.board div:nth-child(16n+10),
+.board div:nth-child(16n+12),
+.board div:nth-child(16n+14),
+.board div:nth-child(16n+16){
+  background:rgb(35, 35, 36);
+}
+</style>
+</head>
+<body>
+
+<div class="board">
+  <!-- 64 squares -->
+  <div class="square"></div>
+  <!-- Copy below line 63 more times -->
+  <!-- For simplicity paste 64 divs -->
+</div>
+
+<script>
+for(let i=0;i<63;i++){
+document.querySelector('.board')
+.insertAdjacentHTML('beforeend','<div class="square"></div>');
+}
+</script>
+
+</body>
+</html>

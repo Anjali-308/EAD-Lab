@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator 
+        </title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: #f2f2f2;
+            }
+            .cl{
+                width: 250px;
+                padding: 15px ;
+                background: white;
+                box-shadow: 0 0 10px gray;
+                border-radius: 10px;
+            }
+            .d{
+                width: 100%;
+                height: 40px;
+                margin-bottom: 10px;
+                text-align: right;
+            }
+            button{
+                 cursor: pointer;
+            }
+            button:hover{
+            background: #bdbdbd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cl">
+            <input type="text" class="d" disabled>
+            <div>
+                <button>7</button><button>8</button><button>9</button><button>/</button>
+                <button>4</button><button>5</button><button>6</button><button>*</button>
+                <button>1</button><button>2</button><button>3</button><button>-</button>
+                <button>0</button><button>.</button><button>=</button><button>+</button>
+            </div>
+        </div>
+    </body>
+</html>

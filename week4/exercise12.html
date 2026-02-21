@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>media query</title>
+        <style>
+            .container{
+                display: flex;
+            }
+            .left,.right{
+                flex: 1;
+                padding: 20px;
+            }
+            .left{
+                background: lightblue;
+            }
+            .right{
+                background: lightcoral;
+            }
+            @media(max-width:600px){
+                .container{
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">left column</div>
+            <div class="right ">right column</div>
+        </div>
+    </body>
+</html>
